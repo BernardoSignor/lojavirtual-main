@@ -5,8 +5,13 @@ rounded-lg shadow mx-auto">
         <div class="flex justify-between items-center mb-6">
 
             <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Produtos</h1>
-            <a href="{{ url('products/new') }}" class="bg-blue-600 text-white px-4 py-2
+            <div class="flex gap-2">
+                <a href="{{ route('products.report') }}" class="inline-flex items-center px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-500 rounded-md font-semibold text-xs text-gray-700 dark:text-gray-300 uppercase tracking-widest shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700">
+                    Relatorio
+                </a>
+                <a href="{{ url('products/new') }}" class="bg-blue-600 text-white px-4 py-2
 rounded hover:bg-blue-700">Cadastrar</a>
+            </div>
 
         </div>
 

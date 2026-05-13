@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Loja Virtual</title>
+    <title>StockBuilderS</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700&display=swap" rel="stylesheet" />
@@ -16,7 +16,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="h-16 flex justify-between items-center">
                 <a href="{{ route('home') }}" class="text-2xl font-bold text-blue-700">
-                    Loja Virtual
+                    StockBuilderS
                 </a>
 
                 <nav class="flex items-center gap-3">
@@ -45,13 +45,13 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
                 <div class="max-w-3xl">
                     <p class="text-sm font-semibold uppercase tracking-wide text-blue-100">
-                        Produtos para venda
+                        Distribuidora de bebidas
                     </p>
                     <h1 class="text-3xl sm:text-4xl font-bold mt-2">
-                        Encontre os produtos disponiveis em nossa loja
+                        Consulte os produtos disponiveis em estoque
                     </h1>
                     <p class="mt-3 text-blue-100">
-                        Confira os itens cadastrados, veja o preco, a quantidade em estoque e filtre por tipo de produto.
+                        Sistema web para gerenciamento de estoque e vendas, com consulta publica dos produtos cadastrados.
                     </p>
                 </div>
             </div>
@@ -100,7 +100,7 @@
 
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-2xl font-bold text-gray-900">
-                    Produtos disponiveis
+                    Produtos em estoque
                 </h2>
                 <span class="text-sm text-gray-600">
                     {{ $products->count() }} produto(s)
