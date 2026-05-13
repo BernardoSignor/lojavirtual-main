@@ -1,0 +1,15 @@
+Explicacao da tela inicial da Loja Virtual
+
+Adicionei a rota principal em routes/web.php, deixando a rota "/" chamar o metodo index do HomeController. Tambem coloquei o nome home nessa rota para facilitar o uso dentro da view.
+
+No HomeController foi usada a consulta dos produtos e dos tipos de produtos. A consulta busca apenas produtos com quantidade maior que zero e preco maior que zero. Tambem foi feito o filtro por tipo de produto e a busca pelo nome do produto. No final, os dados sao enviados para a view usando compact('products', 'types').
+
+Na view resources/views/welcome.blade.php foi criada a tela inicial da loja. Essa tela tem um cabecalho com o nome da loja e links para Login e Registrar. Quando o usuario ja esta logado, aparecem links para Dashboard e Produtos.
+
+Tambem foi adicionado um formulario de filtro na tela inicial, com campo para buscar produto pelo nome e uma lista para filtrar pelo tipo de produto.
+
+Na parte de produtos, foi criada uma listagem em cards. Cada card mostra a imagem do produto, nome, tipo, descricao, preco formatado em reais e quantidade disponivel em estoque.
+
+Caso o produto nao tenha imagem, aparece um bloco simples escrito "Sem imagem". Caso nenhum produto seja encontrado, a tela mostra uma mensagem avisando que nao existem produtos para aquele filtro.
+
+Tambem foi usado o asset('storage/...') para mostrar as imagens dos produtos cadastrados no sistema.
